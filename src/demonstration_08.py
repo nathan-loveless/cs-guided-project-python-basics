@@ -1,3 +1,4 @@
+from inspect import signature
 """
 Challenge #8:
 
@@ -11,5 +12,12 @@ Examples:
 - num_args({}) ➞ 1
 """
 def num_args():
+    sig = signature(num_args)
+    return len(sig.parameters)
     # Your code here
 
+print(num_args())
+print(num_args("foo"))
+print(num_args("foo", "bar"))
+print(num_args(True, False))
+print(num_args({}))

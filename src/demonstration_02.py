@@ -7,7 +7,13 @@ Examples:
 - convert(5) ➞ 300
 - convert(3) ➞ 180
 - convert(2) ➞ 120
-"""
-def convert(minutes):
-    # Your code here
 
+# we can times minutes by 60 to get seconds
+"""
+def convert(minutes):  
+    #return the value of the expression minutes * 60
+    return minutes * 60
+
+print(convert(5))
+print(convert(3))
+print(convert(2))
